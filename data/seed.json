@@ -2,7 +2,8 @@
   "store": {
     "currencies": [
       "eur",
-      "usd"
+      "usd",
+      "dzd"
     ]
   },
   "users": [
@@ -12,6 +13,21 @@
     }
   ],
   "regions": [
+    {
+      "id": "reg_01HJPFP3HFP3JDKPG8PD1SE5A1",
+      "name": "Algeria",
+      "currency_code": "dzd",
+      "tax_rate": 0,
+      "payment_providers": [
+        "manual"
+      ],
+      "fulfillment_providers": [
+        "manual"
+      ],
+      "countries": [
+        "dz"
+      ]
+    },
     {
       "id": "test-region-eu",
       "name": "EU",
