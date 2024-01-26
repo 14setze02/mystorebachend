@@ -49,7 +49,8 @@ const plugins = [
     resolve: "@medusajs/admin",
     /** @type {import('@medusajs/admin').PluginOptions} */
     options: {
-      autoRebuild: false,
+      serve: process.env.NODE_ENV === "development",
+      autoRebuild: true,
     },
   }
 ];
@@ -64,7 +65,8 @@ const modules = {
   cacheService: {
     resolve: "@medusajs/cache-redis",
     options: {
-      redisUrl: REDIS_URL
+      redisUrl: REDIS_URL,
+      ttl : 30
     }
   }
 };
