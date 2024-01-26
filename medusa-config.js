@@ -50,7 +50,7 @@ const plugins = [
     /** @type {import('@medusajs/admin').PluginOptions} */
     options: {
       serve: process.env.NODE_ENV === "development",
-      autoRebuild: true,
+      autoRebuild: false,
     },
   }
 ];
